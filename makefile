@@ -1,6 +1,6 @@
 CC = gcc
 
-all: filesystem
+all: filesys
 
 filesys: filesys.c
 	$(CC) $(CFLAGS) $^ -o $@
