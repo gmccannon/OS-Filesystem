@@ -1,10 +1,9 @@
 CC = gcc
-CFLAGS = -Wall -Wextra
 
 all: filesystem
 
-filesystem: filesys.c
+filesys: filesys.c
 	$(CC) $(CFLAGS) $^ -o $@
 
 clean:
-	rm -f filesystem
+	rm -f filesys
